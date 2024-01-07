@@ -108,7 +108,7 @@ A: "
 
 The initial validation loss for Llama 7B on the WikiSQL is 2.66 and the final
 validation loss after 1000 iterations is 1.23. The table below shows the
-training and validation loss at a few points over the course of training.
+training and validation loss at a few points for training.
 
 | Iteration | Train Loss | Validation Loss |
 | --------- | ---------- | --------------- |
@@ -149,7 +149,7 @@ of memory. Here are some tips to reduce memory use should you need to do so:
 
 2. Try using a smaller batch size with `--batch-size`. The default is `4` so
    setting this to `2` or `1` will reduce memory consumption. This may slow
-   things down a little, but will also reduce the memory use.
+   things down a little, but will also reduce memory use.
 
 3. Reduce the number of layers to fine-tune with `--lora-layers`. The default
    is `16`, so you can try `8` or `4`. This reduces the amount of memory
